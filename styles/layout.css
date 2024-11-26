@@ -1,0 +1,26 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%; /*(regra de 3 valor de X *100 / 1280 - resolucao)*/
+  
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;  /*barra de rolagem aparecerá conforme o conteúdo da página*/
+  padding: 4rem; /*valor do padding -> 64 / 16 (tamanho da fonte padrão navegador*/
+  
+  & .main-container {
+    max-width: 33rem;
+    margin-left: auto;
+  }
+}
+
+aside {
+  background-color: var(--surface-secondary);
+  padding: 4rem;
+
+  & .aside-container {
+    max-width: 31rem;
+  }
+}
